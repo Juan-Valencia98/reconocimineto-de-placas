@@ -17,7 +17,7 @@ class LPR:
         return cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
     def apply_threshold(self, img):
-        return cv2.threshold(img, 90, 255, cv2.THRESH_BINARY_INV)[1]
+        return cv2.threshold(img, 110, 255, cv2.THRESH_BINARY_INV)[1]
 
     def apply_adaptive_threshold(self, img):
         return cv2.adaptiveThreshold(img, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY_INV, 7, 13)

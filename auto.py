@@ -17,7 +17,7 @@ idx = 5
 lpr = LPR.LPR()
 
 # Muestra imagen normal 
-img = cv2.imread(f"./upeaimagen/imagen13.png")
+img = cv2.imread(f"./upeaimagen/imagen25.png")
 plot_image(img, False)
 
 # Muestra imagen Blanco y Negro
@@ -73,4 +73,4 @@ alphanumeric = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 options = "-c tessedit_char_whitelist={}".format(alphanumeric)
 options += " --psm {}".format(psm)
 txt = pytesseract.image_to_string(final, config=options)
-print(txt[:4], txt[4:])
+print(txt)
